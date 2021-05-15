@@ -59,7 +59,7 @@ app.use(cors())
 
 app.get('/', (req, res) => {
   res.status(200).json({
-    document: 'expo',
+    document: 'HPAIR',
     message: 'refer docs'
   })
 })
