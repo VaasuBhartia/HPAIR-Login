@@ -68,7 +68,7 @@ router.get("/test", (req, res) => {
 
 
 router.get("/getAll", verify, (req, res) => {
-  if (req.user._id.equals(process.env.ADMIN)) {
+  if (req.user._id === process.env.ADMIN) {
     User.find().then((infos) => {
       res.status(200).json(infos);
     });
